@@ -1,0 +1,35 @@
+<h2>Registration Form</h2>
+<form class="form">
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+          <input type="text" class="form-control" [(ngModel)]="firstname" name="firstname"/>
+          <label class="form-label" for="form3Example1">First name</label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <input type="text" id="form3Example2" class="form-control" [(ngModel)]="lastname" name="lastname"/>
+          <label class="form-label" for="form3Example2">Last name</label>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="email" id="form3Example3" class="form-control" [(ngModel)]="username" name="username"/>
+      <label class="form-label" for="form3Example3">Username</label>
+    </div>
+  
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      <input type="password" id="form3Example4" class="form-control" [(ngModel)]="password" name="password"/>
+      <label class="form-label" for="form3Example4">Password</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="registerUser()">Submit</button> &nbsp;&nbsp;
+    <button type="" class="btn btn-primary" routerLink="/login">Log in</button>
+    <!-- Register buttons -->
+    
+  </form>
